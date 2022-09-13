@@ -1,0 +1,106 @@
+body {
+  background-color: #0bbececb;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+}
+
+.calc-wrapper {
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 700px;
+}
+
+.row {
+  display: flex;
+}
+.subteclado{
+  margin: 10px 0;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  justify-content: space-around;
+}
+
+.sombra{
+  padding: 12px;
+  border-radius: 52px;
+  background: linear-gradient(225deg, #0bb7c7, #099aa7);
+  box-shadow:  -24px 24px 35px #0998a6,
+                24px -24px 35px #0bbece;
+}
+.sombra2{
+  padding: 12px;
+  border-radius: 48px;
+background: linear-gradient(225deg, #051643, #051339);
+box-shadow:  -23px 23px 53px #020a1f,
+             23px -23px 53px #08205f;
+}
+
+
+.darkmode{
+  background-color: #05153f !important;
+  color: whitesmoke;
+}
+
+
+:root {
+  --color-green: #062678;
+  --color-red: #00fff2;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 5rem;
+  height: 3rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+}
+
+
+
+@media (max-width: 600px){ 
+
+  .calc-wrapper {
+    width: 85vw;
+  }
+
+}

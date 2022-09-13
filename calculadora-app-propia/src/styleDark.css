@@ -1,0 +1,10 @@
+@import url(./style.css);
+
+body{
+  background-color: #001630;
+}
+
+.salidaDatos{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
