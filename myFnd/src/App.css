@@ -1,0 +1,80 @@
+/* Mi css */
+:root * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav1 {
+  /* margin-top: 10px; */
+  padding: 15px;
+  padding-bottom: 0;
+  z-index: 999;
+  overflow: auto;
+
+  /* Ocultar scrollbar */
+  scrollbar-width: none;  /*Firefox*/
+}
+ 
+ /* Ocultar scrollbar: Webkit(Chrome, Android browser, Safari, Edge...)*/
+ .nav1::-webkit-scrollbar {
+  width: 0;
+ }
+
+.tit1{
+  position: relative;   /*sticky */
+  /* top: 0px;             sticky */
+  z-index: 800;
+}
+
+.btn{
+  height: 50px;
+  width: 50px;
+  background: #aaa;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
+.btn2{
+  height: 50px;
+  width: 50px;
+  background: #aaa;
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+}
+
+.txt{
+  margin: 15px;
+}
+
+
+/* De ejemplo de libreria react scroll */
+.body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.element {
+  height: calc(100vh - 40px) ;
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Logo_RTP_y_Movilidad_Integrada.png/1024px-Logo_RTP_y_Movilidad_Integrada.png); */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Movilidad_Integrada_-_Red_de_Transporte_de_Pasajeros.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25% auto;
+  background-color: #ededed;
+  font-size: 45px;
+  border-top: 3px solid #000;
+  /* padding-top: 55px; */
+  padding-left: 15px;
+}
+
+.element.no-padding {
+  padding-top: 0;
+}
+
+.active {
+  color: red !important;
+}
+
+ 
